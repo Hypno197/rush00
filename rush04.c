@@ -6,7 +6,7 @@
 /*   By: lbarreca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:54:12 by lbarreca          #+#    #+#             */
-/*   Updated: 2024/09/21 20:16:23 by lbarreca         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:57:04 by lbarreca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,25 +30,23 @@ char	check(int a, int b, int x, int y)
 
 void	rush(int x, int y)
 {
+	int		a;
+	int		b;
 	char	ch;
-	int	a;
-	int	b;
 
-	if ( x > 2147483645 || y > 2147483647 || x < 0 || y < 0)
-	{
-		write(1, "Valori non validi. Bella prova.", 32);
-		return;
-	}
 	a = 0;
 	b = 0;
+	if (x > 2147483645 || y > 2147483647 || x < 0 || y < 0)
+	{
+		write(1, "Valori non validi. Bella prova.", 32);
+		return ;
+	}
 	while (a < x && b < y)
 	{
 		ch = check(a, b, x, y);
 		ft_putchar(ch);
 		if (a < x)
-		{
 			a++;
-		}
 		if (a == x && b != y)
 		{
 			b++;

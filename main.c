@@ -6,14 +6,14 @@
 /*   By: lbarreca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 18:50:48 by lbarreca          #+#    #+#             */
-/*   Updated: 2024/09/21 20:16:43 by lbarreca         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:42:22 by lbarreca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	rush(int x, int y);
 
-int main(void)
+int	main(void)
 {
-        rush(-20,-20);
-        return (0);
+	rush(-20, -20);
+	return (0);
 }

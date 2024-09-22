@@ -6,11 +6,11 @@
 /*   By: lbarreca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:52:17 by lbarreca          #+#    #+#             */
-/*   Updated: 2024/09/21 14:53:23 by lbarreca         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:41:01 by lbarreca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
